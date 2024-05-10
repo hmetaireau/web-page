@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Métaireau</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Couleur de fond de la page */
+        }
+
+        nav {
+            background-image: url('background.png'); /* Remplacez par le chemin de votre image */
+            background-size: cover;
+            color: #fff;
+            padding: 60px;
+            text-align: left;
+            display: flex;
+            flex-direction: row; /* Afficher les éléments en ligne */
+            justify-content: space-between; /* Aligner à l'extrémité des deux côtés */
+            align-items: flex-start;
+        }
+
+        nav span {
+            font-size: 24px; /* Ajustez la taille du texte selon vos besoins */
+            font-weight: bold; /* Optionnel : pour mettre en gras */
+        }
+
+        nav span.subtext {
+            font-size: 14px; /* Taille du texte plus petit */
+            font-style: italic; /* Texte en italique */
+            display: block; /* Afficher sur une nouvelle ligne */
+            margin-top: 5px; /* Marge en haut pour l'espace */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        nav a.active {
+            background-color: rgba(255, 255, 255, 0.1); /* Couleur de fond pour indiquer l'élément actif */
+            border-radius: 5px; /* Coins arrondis pour plus de style */
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        section img {
+            width: 100%;
+            max-width: 400px; /* Ajustez la taille maximale selon vos besoins */
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+
+        .content-item {
+            display: none; /* Masquer tous les éléments de contenu par défaut */
+        }
+
+        nav div {
+            margin-top: 20px; /* Ajouter une marge entre les deux div */
+        }
+        
+        .photo-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-item {
+    width: 23%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+}
+
+.photo-item span {
+    display: block;
+    margin-top: 5px;
+}
+
+.experiences {
+    color: #28468A;
+}
+
+.section {
+    color: #3C4369  ; 
+}
+
+
+.middle-content {
+    max-width: 600px; /* Réglez la largeur maximale selon vos besoins */
+    margin: 0 auto; /* Cela alignera le contenu au milieu horizontalement */
+}
+
+p {
+    text-align: justify; /* Justification du texte pour tous les paragraphes */
+}
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div>
+            <span>Hannah Métaireau</span>
+        </div>
+        <div>
+            <a href="#" onclick="changeContent('home')" id="homeLink">Home</a>
+            <a href="#" onclick="changeContent('about')" id="aboutLink">CV</a>
+            <a href="#" onclick="changeContent('contact')" id="contactLink">Contact</a>
+        </div>
+    </nav>
+
+    <section id="content">
+        <div id="home" class="content-item">
+            <h1>Welcome !</h1>
+            
+            <img src="IMG_002BA5147C40-1.jpeg"  style="float: left; margin-right: 15px;">
+            
+         <div class="middle-content">
+            
+            <p>
+            I'm in my final year of a Masters in Environmental Sciences and Coastal Ecology at the University of La Rochelle. I'm interested in marine and coastal ecology,
+            more specifically in the interactions between animal species and their environments. In order to better understand the impact of environmental changes on the 
+            behaviour of marine species and their possible adaptations, I am interested in their foraging, reproductive behaviour, etc. My research is aimed at conservation, 
+            which is why it's important for me to work with protected area managers.
+            </p>
+            
+             <p>
+             If you would like to find out more about my background and work, please click on the CV tab.
+             </p>
+             
+             <p>
+             If you interested in contacting me you can have access to my contact via the Contact tab.
+             </p>
+             
+         </div>
+            
+        </div>
+
+        <div id="about" class="content-item">
+            
+            <h2 class="section">Education</h2>
+            
+            
+            <p> 
+            <a href="https://master-spe.univ-lr.fr/enseignements/geel/">Master's degree in Environmental Sciences - Environmental management and coastal ecology</a>
+            at La Rochelle University <i>2022 ‐ 2024</i> 
+            </p>
+            
+            <p> 
+            <a href="https://formations.univ-larochelle.fr/licence-sciences-vie"> Bachelor's degree in Life sciences -  Biology of marine ecosystems at La Rochelle University</a>
+            at La Rochelle University <i>2019 ‐ 2022</i>
+            </p>
+            
+            <h2 class="section">Languages</h2>
+            
+            <p> 
+            <b>English</b> - C1, 980/990 TOEIC (January 2023)
+            </p>
+            
+            <p> 
+            <b>French</b> - Native
+            </p>
+            
+            
+            <h2 class="section">Experiences</h2>
+            
+            <h3 class="experiences">Justus Liebig University ‐ Animal Behavioural Ecology and Ecophysiology, Gießen, Allemagne, January – June 2024</h3>
+            <p><b>Supervisor</b> Prof. Dr. Petra Quillfeldt</p>
+            <p><b>Report subject</b> Exploring the Diet and Parasitic Dynamics of Imperial Cormorants (<i>Leucocarbo atriceps</i>) in the Falkland Islands</p>
+            
+            <p><b>Abstract</b></p>
+            
+            Understanding prey-predator interactions is crucial for comprehending animal behavior, population dynamics, and the repercussions of human activities and 
+            climate change on ecosystems, especially in marine environments. Seabirds, as top predators, offer valuable insights into these dynamics, with the Imperial 
+            Cormorant being a notable example found in South American waters, particularly in Chile, Argentina, and the Falkland Islands. Despite this, Falkland Islands 
+            populations remain relatively understudied. This study aims to enhance our understanding of the Imperial Cormorant's diet while also providing the first 
+            description of endoparasites present in the Falkland Islands area. Pellet analysis was chosen as the method due to its non-invasive nature and ease of access. 
+            Initial findings indicate that the species predominantly feeds on fish, followed by crustaceans and cephalopods. Regarding endoparasites, nematode larvae 
+            (Anisakids) were most prevalent, with trematode eggs (Heterophyidae) also being identified. Attention will be paid to assessing consistency in diet and 
+            parasite presence across seasons. Furthermore, focus will be directed towards prey-parasite relationships to gain deeper insights into parasite circulation 
+            within the ecosystem.
+            
+            <div class="photo-container">
+                <div class="photo-item">
+                    <img src="DSCN9897.JPG" alt="Photo 1">
+                    <span>Imperial Cormorant (<i>Leucocarbo atriceps</i>) </span>
+                </div>
+                <div class="photo-item">
+                    <img src="M590.png" alt="Photo 2">
+                    <span><i>Contracaecum</i> sp larvae</span>
+                </div>
+                <div class="photo-item">
+                    <img src="pata.png" alt="Photo 3">
+                    <span><i>Patagonotothen</i> sp pair of otoliths</span>
+                </div>
+                <div class="photo-item">
+                    <img src="map_Falkland_Islands.png" alt="Photo 4">
+                    <span>Map of the study area</span>
+                </div>
+            </div>
+            
+    
+            
+            <h3 class="experiences">Aiguillon Bay National Nature Reserve & LIENSs, Sainte Radégonde des Noyers, France, April – July 2023</h3>
+            <p><b>Supervisors</b> Jean‐Pierre Guéret (LPO) & Pierrick Bocher (LIENSs ‐ La Rochelle University)</p>
+            <p><b>Report subject</b> Study of temporal variations in wintering shorebird numbers in relation to benthic macrofauna in Aiguillon Bay between 2004 and 2014</p>
+            
+            <p><b>Abstract</b></p>
+            
+            Shorebird populations are declining worldwide. Aiguillon Bay is an important wintering area for shorebirds. During this overwintering period, 
+            waders feed on the benthic macrofauna present on the mudflats to acquire sufficient energy resources. Knowledge of available trophic resources 
+            and their variability is therefore essential. This is why benthic macrofauna monitoring has been in place since 2004 in various areas of the Pertuis 
+            Charentais. The results show the dominance of the gastropod <i>P. ulvae</i>. Benthic macrofauna is subject to inter-annual variations specific to each species. 
+            These variations can be explained by a number of factors, including temperature, salinity and recruitment. The relationship between food resources and 
+            shorebird numbers has not been demonstrated. However, a trend of decreasing or increasing numbers with the abundance of certain species can be viewed in 
+            2009 and 2011. The varied diet of shorebirds may explain why variations in prey abundance do not influence numbers. Food resources are not the only factor 
+            to consider. Habitat loss or pollution are factors that could explain these variations. Studies on water quality would be of interest to understand the 
+            potential threats this may have on benthic macrofauna and therefore on shorebirds.
+            
+            <div class="photo-container">
+                <div class="photo-item">
+                    <img src="effectif_limi.png" alt="Photo 5">
+                    <span>Changes in numbers of shorebirds in the Bay of Aiguillon between 2004 and 2014. Each point corresponds to a mean and the bars to the associated standard errors.</span>
+                </div>
+                <div class="photo-item">
+                    <img src="graph_bivalves_biom_dens_an.png" alt="Photo 6">
+                    <span>Changes in mean densities (A) and biomasses (B) of the main bivalve species between 2004 and 2014. Each point corresponds to a mean and the bars to the associated standard errors.</span>
+                </div>
+                <div class="photo-item">
+                    <img src="grille_echantillonnage.png" alt="Photo 7">
+                    <span>Location of the study area with the sampling grid used to monitor benthic macrofauna in Aiguillon Bay since 2004. Bocher et al (2013)</span>
+                </div>
+            </div>
+            
+
+
+            
+            <h3 class="experiences">Institut universitaire Européen de la Mer ‐ LEMAR, Plouzané, France, April – June 2022</h3>
+            <p><b>Supervisors</b> François Le Loc’h (Research Director) & Sandrine Serre (PhD student)</p>
+            <p><b>Report subject</b> Study of the trophic structure of the Bay of Biscay through taxa, bentho‐demersal and pelagic compartments, and the size of marine species with the use of stable isotopes of carbon and nitrogen.</p>
+            
+            <p><b>Abstract</b></p>
+            
+            Stable isotopes are widely used in the study of the trophic ecology of marine organisms. This study was carried out in connection with the OSPAR international 
+            convention, which aims to protect the marine environment of the North-East Atlantic. The aim of this report was to study the trophic structure of the Bay of 
+            Biscay (North-East Atlantic Ocean) in terms of taxa, benthic-demersal and pelagic compartments, and species size. To this end, data on several species were 
+            collected from various publications. The results showed that there are more trophic levels in the pelagic compartment than in the benthic-demersal compartment. 
+            At taxa level, a diversity of food sources and trophic levels was shown. The trophic structure of the pelagic compartment has the same pelagic food source, with 
+            a food web structure and a main energy transfer pathway. The fish and crustaceans in this compartment are taxa with the same structure. On the other hand, the 
+            bentho-demersal compartment has a variety of food sources. However, bentho-demersal fish have a trophic structure with the same bentho-demersal food source. The 
+            increase in species size leads to an increase in the trophic level in the pelagic and benthic-demersal compartments. At the taxa level, this has been observed in 
+            pelagic fish and bentho-demersal crustaceans. However, this increase in size only had an effect on the food source in the pelagic com- partment, even though there 
+            is a great deal of uncertainty regarding the model. At the taxa level, a diversity of food sources was observed in bentho-demersal crustaceans and pelagic and 
+            bentho-demersal fish. Establishing the trophic structure of the Bay of Biscay will therefore enable protection and conservation plans to be put in place for this 
+            part of the North-East Atlantic.
+            
+            
+            <div class="photo-container">
+                <div class="photo-item">
+                    <img src="relation_iso.jpeg" alt="Photo 8">
+                    <span>Relationship between carbon and nitrogen isotopic compositions for different taxa in the bentho-dermersal (A) and pelagic (B) compartments. 
+                    Each point corresponds to the mean carbon and nitrogen isotopic compositions of a species. The shaded areas around the regression lines represent 
+                    the 95% confidence intervals.</span>
+                </div>
+                <div class="photo-item">
+                    <img src="graphical_abstract.jpeg" alt="Photo 9">
+                    <span>Schematic overview of the trophic structure of the Bay of Biscay.</span>
+                </div>
+                <div class="photo-item">
+                    <img src="BoB.jpg" alt="Photo 10">
+                    <span>Study area of the Bay of Biscay and location of the main rivers flowing into it. 
+                    The shaded area corresponds to the French part of the continental shelf. Lassalle et al.(2014)</span>
+                </div>
+            </div>
+            
+            <h2 class="section">Skills</h2>
+            
+            <p> 
+            <b>Interpersonal and management skills</b> - Teamwork, adaptability, communication, sense of initiative, biological and ecological knowledge
+            </p>
+            
+            <p> 
+            <b>Analytical</b> - IMRaD structure, scientific poster, bibliographic synthesis
+            </p>
+            
+            <p> 
+            <b>IT</b> - Office: LATEX, Pack Office, Zotero ; Statistics: R, Python ; GIS: QGIS, package sf (R)
+            </p>
+            
+            <h2 class="section">Associative activities</h2>
+            
+            <p> 
+            <b>Groupe Jeunes LPO</b> - Participation in naturalist outings, installation of photo traps, dissection of pellets, Wetlands counts
+            </p>
+            
+
+            
+        </div>
+
+        <div id="contact" class="content-item">
+            <h1>Contact</h1>
+            <p>If you wish to contact me, please do not hesitate to write to me at the following e-mail address <a href="mailto:hmetaireau@icloud.com">hmetaireau@icloud.com</a> </p>
+            <p>You can also contact me via my <a href="https://www.researchgate.net/profile/Hannah-Metaireau">researchgate profil</a>  </p>
+        </div>
+    </section>
+
+<script>
+    // Appeler la fonction changeContent avec 'home' au chargement de la page
+    document.addEventListener('DOMContentLoaded', function() {
+        changeContent('home');
+    });
+
+    function changeContent(page) {
+        var homeLink = document.getElementById('homeLink');
+        var aboutLink = document.getElementById('aboutLink');
+        var contactLink = document.getElementById('contactLink');
+
+        // Cacher tous les éléments de contenu
+        var contentItems = document.querySelectorAll('.content-item');
+        contentItems.forEach(function (item) {
+            item.style.display = 'none';
+        });
+
+        switch (page) {
+            case 'home':
+                document.getElementById('home').style.display = 'block';
+                setActiveLink(homeLink);
+                break;
+            case 'about':
+                document.getElementById('about').style.display = 'block';
+                setActiveLink(aboutLink);
+                break;
+            case 'contact':
+                document.getElementById('contact').style.display = 'block';
+                setActiveLink(contactLink);
+                break;
+            default:
+                break;
+        }
+    }
+
+    function setActiveLink(link) {
+        // Retirer la classe 'active' de tous les liens
+        var links = document.querySelectorAll('nav a');
+        links.forEach(function (el) {
+            el.classList.remove('active');
+        });
+
+        // Ajouter la classe 'active' à l'élément cliqué
+        link.classList.add('active');
+    }
+</script>
+</body>
+</html>
