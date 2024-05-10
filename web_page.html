@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hannah Métaireau</title>
     <style>
+    
+    @media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Afficher les éléments de navigation en colonne */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    nav div {
+        margin-top: 10px; /* Réduire l'espace entre les éléments de navigation */
+    }
+
+    .middle-content {
+        max-width: 90%; /* Réduire la largeur maximale */
+    }
+
+    .photo-container {
+        flex-direction: column; /* Afficher les photos en colonne */
+    }
+
+    .photo-item {
+        width: 100%; /* Prendre la largeur complète */
+        margin-bottom: 20px; /* Ajouter de l'espace entre les photos */
+    }
+}
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -70,42 +95,43 @@
         }
         
         .photo-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.photo-item {
-    width: 23%;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.photo-item img {
-    width: 100%;
-}
-
-.photo-item span {
-    display: block;
-    margin-top: 5px;
-}
-
-.experiences {
-    color: #28468A;
-}
-
-.section {
-    color: #3C4369  ; 
-}
+            display: flex;
+            justify-content: space-between;
+        }
 
 
-.middle-content {
-    max-width: 600px; /* Réglez la largeur maximale selon vos besoins */
-    margin: 0 auto; /* Cela alignera le contenu au milieu horizontalement */
-}
+        .photo-item {
+            width: 23%;
+            box-sizing: border-box;
+            text-align: center;
+        }
 
-p {
-    text-align: justify; /* Justification du texte pour tous les paragraphes */
-}
+        .photo-item img {
+            width: 100%;
+        }
+
+        .photo-item span {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .experiences {
+            color: #28468A;
+        }
+
+        .section {
+            color: #3C4369  ; 
+        }
+
+
+       .middle-content {
+            max-width: 600px; /* Réglez la largeur maximale selon vos besoins */
+            margin: 0 auto; /* Cela alignera le contenu au milieu horizontalement */
+        }
+
+        p {
+            text-align: justify; /* Justification du texte pour tous les paragraphes */
+        }
 
     </style>
 </head>
