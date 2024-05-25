@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,
         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+        
     <title>Hannah Métaireau</title>
+    
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -108,6 +113,31 @@
         p {
             text-align: justify; /* Justification du texte pour tous les paragraphes */
         }
+        
+        .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Couleur de la ligne */
+    margin: 20px 0; /* Marge supérieure et inférieure pour l'espace */
+}
+
+.photo-item span {
+    font-size: 14px; /* Taille de texte plus petite */
+}
+
+.section-heading::before {
+    content: ""; /* Contenu vide */
+    display: inline-block;
+    width: 10px; /* Largeur de la puce */
+    height: 10px; /* Hauteur de la puce */
+    background-color: #ccc; /* Couleur de la puce */
+    border-radius: 50%; /* Rend la puce ronde */
+    margin-right: 10px; /* Marge à droite pour l'espace */
+}
+
+#home {
+    text-align: center; /* Centre le texte */
+}
 
     </style>
 </head>
@@ -127,16 +157,13 @@
     <section id="content">
         <div id="home" class="content-item">
             <h1>Welcome !</h1>
-            
-            <img src="IMG_002BA5147C40-1.jpeg"  style="float: left; margin-right: 15px;">
+    
             
          <div class="middle-content">
             
             <p>
-            I'm in my final year of a Masters in Environmental Sciences and Coastal Ecology at the University of La Rochelle. I'm interested in marine and coastal ecology,
-            more specifically in the interactions between animal species and their environments. In order to better understand the impact of environmental changes on the 
-            behaviour of marine species and their possible adaptations, I am interested in their foraging, reproductive behaviour, etc. My research is aimed at conservation, 
-            which is why it's important for me to work with protected area managers.
+            I'm in my final year of a Masters in Environmental Sciences and Coastal Ecology at the University of La Rochelle. I am currently part of the Animal Behavioural Ecology and Ecophysiology 
+            group at the Justus Liebig University (Gießen, Germany) for my master thesis on the diet and parasites of the Imperial Cormorant (<i>Leucocarbo atriceps</i>) in the Falkland Islands.
             </p>
             
              <p>
@@ -147,43 +174,50 @@
              If you interested in contacting me you can have access to my contact via the Contact tab.
              </p>
              
+             <img src="IMG_002BA5147C40-1.jpeg"  style="max-width: 70%; display: block; margin: 20px auto 0;">
+             
+             <img src="IMG_2745.jpeg"  style="max-width: 70%; display: block; margin: 20px auto 0;">
          </div>
             
         </div>
 
         <div id="about" class="content-item">
             
-            <h2 class="section">Education</h2>
+            <h2 id="home" class="section">Education</h2>
             
             
-            <p> 
+            <p id="home"> 
             <a href="https://master-spe.univ-lr.fr/enseignements/geel/">Master's degree in Environmental Sciences - Environmental management and coastal ecology</a>
             at La Rochelle University <i>2022 ‐ 2024</i> 
             </p>
             
-            <p> 
+            <p id="home"> 
             <a href="https://formations.univ-larochelle.fr/licence-sciences-vie"> Bachelor's degree in Life sciences -  Biology of marine ecosystems at La Rochelle University</a>
             at La Rochelle University <i>2019 ‐ 2022</i>
             </p>
             
-            <h2 class="section">Languages</h2>
+            <div class="separator"></div>
             
-            <p> 
+            <h2  id="home" class="section">Languages</h2>
+            
+            <p id="home"> 
             <b>English</b> - C1, 980/990 TOEIC (January 2023)
             </p>
             
-            <p> 
+            <p id="home"> 
             <b>French</b> - Native
             </p>
             
+            <div class="separator"></div>
             
-            <h2 class="section">Experiences</h2>
             
-            <h3 class="experiences">Justus Liebig University ‐ Animal Behavioural Ecology and Ecophysiology, Gießen, Allemagne, January – June 2024</h3>
+            <h2 id="home" class="section">Experiences</h2>
+            
+            <h3 class="experiences section-heading">Justus Liebig University ‐ Animal Behavioural Ecology and Ecophysiology, Gießen, Allemagne, January – June 2024</h3>
             <p><b>Supervisor</b> Prof. Dr. Petra Quillfeldt</p>
             <p><b>Report subject</b> Exploring the Diet and Parasitic Dynamics of Imperial Cormorants (<i>Leucocarbo atriceps</i>) in the Falkland Islands</p>
             
-            <p><b>Abstract</b></p>
+            <p id="home"><b>Abstract</b></p>
             
             Understanding prey-predator interactions is crucial for comprehending animal behavior, population dynamics, and the repercussions of human activities and 
             climate change on ecosystems, especially in marine environments. Seabirds, as top predators, offer valuable insights into these dynamics, with the Imperial 
@@ -216,11 +250,11 @@
             
     
             
-            <h3 class="experiences">Aiguillon Bay National Nature Reserve & LIENSs, Sainte Radégonde des Noyers, France, April – July 2023</h3>
+            <h3 class="experiences section-heading">Aiguillon Bay National Nature Reserve & LIENSs, Sainte Radégonde des Noyers, France, April – July 2023</h3>
             <p><b>Supervisors</b> Jean‐Pierre Guéret (LPO) & Pierrick Bocher (LIENSs ‐ La Rochelle University)</p>
             <p><b>Report subject</b> Study of temporal variations in wintering shorebird numbers in relation to benthic macrofauna in Aiguillon Bay between 2004 and 2014</p>
             
-            <p><b>Abstract</b></p>
+            <p id="home"><b>Abstract</b></p>
             
             Shorebird populations are declining worldwide. Aiguillon Bay is an important wintering area for shorebirds. During this overwintering period, 
             waders feed on the benthic macrofauna present on the mudflats to acquire sufficient energy resources. Knowledge of available trophic resources 
@@ -250,11 +284,11 @@
 
 
             
-            <h3 class="experiences">Institut universitaire Européen de la Mer ‐ LEMAR, Plouzané, France, April – June 2022</h3>
+            <h3 class="experiences section-heading">Institut universitaire Européen de la Mer ‐ LEMAR, Plouzané, France, April – June 2022</h3>
             <p><b>Supervisors</b> François Le Loc’h (Research Director) & Sandrine Serre (PhD student)</p>
             <p><b>Report subject</b> Study of the trophic structure of the Bay of Biscay through taxa, bentho‐demersal and pelagic compartments, and the size of marine species with the use of stable isotopes of carbon and nitrogen.</p>
             
-            <p><b>Abstract</b></p>
+            <p id="home"><b>Abstract</b></p>
             
             Stable isotopes are widely used in the study of the trophic ecology of marine organisms. This study was carried out in connection with the OSPAR international 
             convention, which aims to protect the marine environment of the North-East Atlantic. The aim of this report was to study the trophic structure of the Bay of 
@@ -288,7 +322,9 @@
                 </div>
             </div>
             
-            <h2 class="section">Skills</h2>
+           <div class="separator"></div>
+            
+            <h2 id="home" class="section">Skills</h2>
             
             <p> 
             <b>Interpersonal and management skills</b> - Teamwork, adaptability, communication, sense of initiative, biological and ecological knowledge
@@ -302,7 +338,9 @@
             <b>IT</b> - Office: LATEX, Pack Office, Zotero ; Statistics: R, Python ; GIS: QGIS, package sf (R)
             </p>
             
-            <h2 class="section">Associative activities</h2>
+             <div class="separator"></div>
+            
+            <h2 id="home" class="section">Associative activities</h2>
             
             <p> 
             <b>Groupe Jeunes LPO</b> - Participation in naturalist outings, installation of photo traps, dissection of pellets, Wetlands counts
